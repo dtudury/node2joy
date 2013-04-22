@@ -1,0 +1,20 @@
+{
+   "name": "nko3-node-to-joy",
+   "version": "0.0.0-118",
+   "description": "node to joy",
+   "main": "server.js",
+   "scripts": {
+      "start": "node server.js"
+   },
+   "repository": {
+      "type": "git",
+      "url": "git@github.com:nko3/node-to-joy.git"
+   },
+   "dependencies": {
+      "mongodb": "1.1.x"
+   },
+   "engines": {
+      "node": "0.8.x"
+   },
+   "subdomain": "cryptopotamus"
+}

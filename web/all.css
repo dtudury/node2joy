@@ -1,0 +1,36 @@
+body, .ui-widget.ui-button span.ui-button-text, div.ui-dialog div, div.ui-dialog input.text {
+	font-family: "Open Sans", Arial, sans-serif; font-weight: 300; 
+}
+ul {
+   list-style-type: none;
+   margin: 0; 
+   padding: 5px 10px; 
+   zoom: 1;
+}
+#categoryEditorButton {
+   clear:both;
+   display:block;
+   margin-left:auto;
+}
+li { 
+   margin: 1px;
+   float:left;
+}
+li.ui-button span.ui-button-text {
+   padding: 5px 10px;
+}
+.ui-button span.ui-button-text {
+   padding: 5px 10px;
+   margin: 0px;
+   line-height:1;
+}
+ #panel {
+    padding:1%;
+ }
+ input.text {
+ }
+ .fixed-width {
+    display: block;
+    float: left;
+    width: 150px;
+ }

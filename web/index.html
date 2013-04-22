@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+   <head>
+      <title>Cryptopotamus</title>
+      <meta charset="utf-8">
+		<link rel="stylesheet" href="//ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/themes/ui-lightness/jquery-ui.css" />
+      <!-- <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" /> -->
+		<link rel="stylesheet" href="//fonts.googleapis.com/css?family=Open+Sans" />
+		<link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/2.0/css/font-awesome.css" />
+      <link rel="stylesheet" href="all.css?0002013.04.22.17.11.45.034" />
+      <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+      <script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script>
+      <script src="all.js?0002013.04.22.17.11.45.034"></script>
+      <script src="crypto/aes.js"></script>
+      <script src="crypto/hmac-md5.js"></script>
+      <script src="crypto/hmac-sha1.js"></script>
+      <script src="crypto/hmac-sha224.js"></script>
+      <script src="crypto/hmac-sha256.js"></script>
+      <script src="crypto/hmac-sha384.js"></script>
+      <script src="crypto/hmac-sha512.js"></script>
+      <script src="crypto/md5.js"></script>
+      <script src="crypto/pbkdf2.js"></script>
+      <script src="crypto/rabbit.js"></script>
+      <script src="crypto/rc4.js"></script>
+      <script src="crypto/sha1.js"></script>
+      <script src="crypto/sha224.js"></script>
+      <script src="crypto/sha256.js"></script>
+      <script src="crypto/sha384.js"></script>
+      <script src="crypto/sha512.js"></script>
+      <script src="crypto/tripledes.js"></script>
+   </head>
+   <body>
+      <div id="fb-root"></div>
+      <b>Password Deriver:</b> <i>"One Password to rule them all"</i>
+      <br/>
+      Multiple Strong Passwords Based on a Single Password
+      <br/>
+      <br/>
+      <div id="panel" class="ui-corner-all ui-widget ui-widget-content">
+         <button id="loginButton"><i class="icon-signin"></i> Enable Saving</button>
+         <button id="saveButton"><i class="icon-upload"></i> Save</button>
+         <button id="loadButton"><i class="icon-download"></i> Reload</button>
+      </div>
+      <br />
+      <div>Master Password: <input id="saltInput" type="password"></input></div>
+		<br />
+      <div id="categoryTabs"></div>
+      <div id="panel" class="ui-corner-all ui-widget ui-widget-content">
+         <div class="ui-widget-header">Site Specific Password Generators:</div>
+         <ul id="siteList"></ul>
+         <button id="categoryEditorButton"><i class="icon-cog"></i></button>
+      </div>
+      <i>This password generator uses crypto-js hash functions and user specified parameters to generate site-specific passwords.  The backend is node.js served from nodejitsu with a mongolab hosted database.  Facebook login is used to create a unique user id for saving configuration parameters.  The master password is never saved and care should be taken not to lose it.</i>
+      <!--
+      <br />
+      <textarea id="configurationEditor" cols="25" rows="5">
+      </textarea>
+		<br />
+      -->
+   </body>
+</html>

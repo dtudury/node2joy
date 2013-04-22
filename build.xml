@@ -1,0 +1,26 @@
+<project name="cryptopotamus" default="deploy" basedir=".">
+   <property file="build.properties"/>
+   
+   <target name="deploy" depends="build">
+      <echo>
+         TODO: fix this...
+         type: jitsu deploy -c
+      </echo>
+   </target>
+   <target name="build">
+		<tstamp>
+			<format
+				property="now"
+				timezone="GMT"
+				pattern="yyyyyyy.MM.dd.HH.mm.ss.SSS"/>
+		</tstamp>
+      <concat destfile="web/all.js">
+         <fileset dir="src/js" includes="*.js"/>
+      </concat>
+		<replaceregexp file="web/index.html" match='all.css[^"]*' replace="all.css?${now}"/>
+		<replaceregexp file="web/index.html" match='all.js[^"]*' replace="all.js?${now}"/>
+      
+      
+   </target>
+</project>
+
